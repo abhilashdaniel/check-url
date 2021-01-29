@@ -6,7 +6,7 @@ an instrumented service that ingests the given url response metrics to Prometheu
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Tear Down](#tear-down)
-* [Dashboard images] (#dashboard-images)
+* [Dashboard images](#dashboard-images)
 
 
 ## General info
