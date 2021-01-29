@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: check-url
+  labels:
+    app: check-url
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: check-url
+  template:
+    metadata:
+      labels:
+        app: check-url
+    spec:
+      containers:
+      - name: check-url
+        image: kodampuli/check-url:v1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: check-url
+  labels:
+    app: check-url
+spec:
+  selector: 
+    app: check-url
+  type: NodePort  
+  ports:
+    - port: 8080
+      name: checkurl-metrics
+      targetPort: 8080 
+      nodePort: 31000
+    - port: 8081
+      name: checkurl-httpserver
+      targetPort: 8081 
+      nodePort: 32000
+---
