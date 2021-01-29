@@ -1,5 +1,5 @@
 # check-url
-an instrumented service that ingests the given url response metrics to Prometheus/Grafana
+An instrumented service that ingests the given url response metrics to Prometheus/Grafana
 
 ## Table of contents
 * [General info](#general-info)
@@ -11,7 +11,7 @@ an instrumented service that ingests the given url response metrics to Prometheu
 
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+An instrumented service that ingests the given url response metrics to Prometheus/Grafana.
 	
 ## Technologies
 Java, Maven, Docker, Minikube/k8s, Prometheus, Grafana. 
