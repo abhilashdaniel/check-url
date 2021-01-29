@@ -2,7 +2,6 @@
 An instrumented service that ingests the given url response metrics to Prometheus/Grafana
 
 ## Table of contents
-* [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Tear Down](#tear-down)
@@ -10,9 +9,6 @@ An instrumented service that ingests the given url response metrics to Prometheu
 * [References](#References)
 
 
-## General info
-An instrumented service that ingests the given url response metrics to Prometheus/Grafana.
-	
 ## Technologies
 Java, Maven, Docker, Minikube/k8s, Prometheus, Grafana. 
 
