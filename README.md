@@ -1,5 +1,5 @@
 # check-url
-an instrumented service that ingests the given url response metrics to Prometheus/Grafana EXPOSITION
+an instrumented service that ingests the given url response metrics to Prometheus/Grafana
 
 ## Table of contents
 * [General info](#general-info)
@@ -7,6 +7,7 @@ an instrumented service that ingests the given url response metrics to Prometheu
 * [Setup](#setup)
 * [Tear Down](#tear-down)
 * [Dashboard images](#dashboard-images)
+* [References](#References)
 
 
 ## General info
@@ -69,3 +70,11 @@ $ minikube -p check-url delete
 ```
 
 ## Dashboard images
+
+![Prometheus exposition](https://github.com/kodampuli/check-url/blob/main/screenshots/prometheus-screengrab.png)
+
+![Grafana dashboard](https://github.com/kodampuli/check-url/blob/main/screenshots/grafana-screengrab.png)
+
+## References
+
+* [prometheus/client_java](https://github.com/prometheus/client_java)
