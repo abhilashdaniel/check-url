@@ -6,7 +6,6 @@ An instrumented service that ingests the given url response metrics to Prometheu
 * [Setup](#setup)
 * [Tear Down](#tear-down)
 * [Dashboard images](#dashboard-images)
-* [References](#References)
 
 
 ## Technologies
@@ -33,17 +32,10 @@ Get the minikube url endpoints
 ```
 $ minikube -p check-url service --url check-url
 * url-1
-* url-2
 $ minikube -p check-url service --url prometheus
-* url-3
+* url-2
 $ minikube -p check-url service --url grafana
-* url-4
-```
-
-External urls can be checked for its stats by a GET
-```
-$ curl -v {url-2}/https://httpstat.us/200
-$ curl -v {url-2/https://httpstat.us/503
+* url-3
 ```
 
 Exposition HTTPServer
@@ -51,9 +43,9 @@ Exposition HTTPServer
 $ curl -v {url-1}/metrics
 ```
 
-Prometheus - Open `{url-3}` on a browser
+Prometheus - Open `{url-2}` on a browser
 
-Grafana - Open `{url-4}` on a browser
+Grafana - Open `{url-3}` on a browser
 
 
 ## Tear down 
@@ -71,6 +63,4 @@ $ minikube -p check-url delete
 
 ![Grafana dashboard](https://github.com/kodampuli/check-url/blob/main/screenshots/grafana-screengrab.png)
 
-## References
 
-* [prometheus/client_java](https://github.com/prometheus/client_java)
