@@ -42,7 +42,7 @@ public class MetricsServer {
 
                 OutputStream responseBody = exchange.getResponseBody();
                 for (Map.Entry<String, Long> entry : urlPoller.getEmitMap().entrySet()) {
-                    String s = entry.getKey() + "  = " + entry.getValue() + "\n";
+                    String s = entry.getKey() + " " + entry.getValue() + "\n";
                     responseBody.write(s.getBytes());
                 }
                 responseBody.close();

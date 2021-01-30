@@ -52,8 +52,9 @@ public class TestMain {
             String inputLine;
             StringBuffer response = new StringBuffer();
             while ((inputLine = in.readLine()) != null) {
-                String[] mSplit = inputLine.split("  = ");
-                hmMetrics.put(mSplit[0], mSplit[1]);
+                String[] mSplit = inputLine.split(" ");
+                String key = mSplit[0] + " " + mSplit[1];
+                hmMetrics.put(key, mSplit[2]);
             }
             in.close();
         } else {
