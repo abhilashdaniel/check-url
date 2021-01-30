@@ -3,12 +3,11 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../check-url">
-      <sourceFolder url="file://$MODULE_DIR$/../check-url/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../check-url/src/main/resources" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/../check-url/target" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient:0.10.0" level="project" />
     <orderEntry type="library" name="Maven: io.prometheus:simpleclient_httpserver:0.10.0" level="project" />
