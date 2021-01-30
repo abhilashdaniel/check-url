@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: check-url
-        image: kodampuli/check-url:v1
+        image: kodampuli/check-url:v2
 ---
 apiVersion: v1
 kind: Service

@@ -9,6 +9,9 @@ import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.util.Map;
 
+/*
+*   Server that produces metrics
+ */
 public class MetricsServer {
 
   private HttpServer server;
@@ -29,9 +32,8 @@ public class MetricsServer {
   }
 
     public void handle(HttpExchange exchange) throws IOException {
-        //Serve only if path is metrics
+        //Serve only if the path is metrics
         if ("/metrics".equals(exchange.getHttpContext().getPath())) {
-            //TODO: Implement
             String requestMethod = exchange.getRequestMethod();
             if (requestMethod.equalsIgnoreCase("GET")) {
                 Headers responseHeaders = exchange.getResponseHeaders();

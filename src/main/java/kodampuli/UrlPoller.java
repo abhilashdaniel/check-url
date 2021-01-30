@@ -7,7 +7,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-//TODO: Not a URLHandler, but service
+/*
+* Instrumented Class to poll the external urls in the background
+* every 1.5s. The metrics are fed to a HM registry for the HTTP
+* Server to consume.
+ */
 public class UrlPoller implements Runnable{
 
     private Map<String, Long> emitMap = new HashMap<>();
@@ -54,6 +58,7 @@ public class UrlPoller implements Runnable{
             elapsedTime = (new Date()).getTime() - start.getTime();
             con.disconnect();
 
+            //Populate the HM registry with metric stats
             emitMap.put(SAMPLE_EXT_URL_UP + "{url=\"" + url + " \"}",
                     (long) (code == 200 ? 1 : 0));
             emitMap.put(SAMPLE_EXT_URL_RESPONSE_MS + "{url=\"" + url + " \"}",
